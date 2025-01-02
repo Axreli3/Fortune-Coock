@@ -1,0 +1,80 @@
+.wrapper {
+    min-height: 100dvh;   
+    display: grid;
+    place-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container  {
+    border: black solid 2px;
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 1.25em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.title {
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.415);
+    margin: 0;
+}
+
+@media (min-width: 780px) {
+    .title {
+        font-size: 58px;
+    }
+}
+
+
+.card {
+    max-width: 600px;
+    height: 245px;
+    background-image: url('./assets/images/galleta_suerte_5.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    
+    display: grid;
+    place-content: center;
+}
+
+@media (min-width: 780px) {
+    .card {
+        background-size: contain;
+    }
+}
+
+.card__body {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.card__text {
+    transform: scale(0.75);
+    margin: auto;
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn {
+    width: fit-content;
+    margin: 0 auto;
+    padding: .75em 2em;
+    background-color: rgba(245, 245, 245, 0.478);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
